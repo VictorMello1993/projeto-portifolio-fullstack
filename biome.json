@@ -9,7 +9,8 @@
     "rules": {
       "complexity": {
         "noStaticOnlyClass":"off",
-        "noThisInStatic": "off"        
+        "noThisInStatic": "off",
+        "noUselessConstructor": "off"        
       },
       "suspicious": {
         "noExplicitAny": "off"        
@@ -28,6 +29,9 @@
     "formatter": {
       "quoteStyle":"double",
       "semicolons": "always"
+    },
+    "parser": {
+      "unsafeParameterDecoratorsEnabled": true
     }
   }
 }

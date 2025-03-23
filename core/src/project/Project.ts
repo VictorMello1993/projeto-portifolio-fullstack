@@ -7,9 +7,9 @@ export interface Project {
 	name: string;
 	description: string;
 	images: string[];
-	type: Type;
 	level: Level;
-	repository: string;
+	type: Type;
 	highlight: boolean;
+	repository: string;
 	stacks: Stack[];
 }

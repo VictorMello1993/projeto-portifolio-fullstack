@@ -9,11 +9,12 @@ datasource db {
 }
 
 model Stack {
-  id          Int     @id @default(autoincrement())
+  id          Int       @id @default(autoincrement())
   name        String
   description String
   image       String
-  highlight   Boolean @default(false)
+  highlight   Boolean   @default(false)
+  projects    Project[]
 
   @@map("stacks")
 }
@@ -27,6 +28,7 @@ model Project {
   type        String
   highlight   Boolean  @default(false)
   repository  String
+  stacks      Stack[]
 
   @@map("projects")
 }
