@@ -1,3 +1,3 @@
-const x = "teste";
-
-export { x };
+export * from "./project";
+export * from "./stack";
+export * from "./shared";
